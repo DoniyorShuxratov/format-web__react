@@ -3,7 +3,7 @@ import {CardTopStyle} from './CardTopStyle'
 export function Hero() {
     return (
         <>
-            <section className="hero container">
+            <section id='heroSection' className="hero container">
                 <div className="hero__left">
                     <h1>
                         Tayyor Informatika <br />

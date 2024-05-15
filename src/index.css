@@ -7,6 +7,8 @@
 @import url(./style/Hero.css);
 @import url(./style/About.css);
 @import url(./style/Carousel.css);
+@import url(./style/Products.css);
+@import url(./style/Footer.css);
 
 
 * {
@@ -38,6 +40,12 @@ body {
 
 h1 {
   font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* box-style */
@@ -100,3 +108,4 @@ h1 {
       max-width: 1200px;
   }
 }
+
