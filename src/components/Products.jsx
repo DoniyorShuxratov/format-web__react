@@ -1,9 +1,9 @@
 export function Products() {
     return (
         <>
-            <section className="product-section container">
+            <section id="productSection" className="product-section container">
                 <div className="product-title empt-box">
-                    <h1>Prductlar</h1>
+                    <h1>Produktlar</h1>
                 </div>
                 <div className="product-list">
                     <div className="product-card def-box">

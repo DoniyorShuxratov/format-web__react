@@ -1,5 +1,6 @@
 import { About } from "./components/About"
 import { Carousel } from "./components/Carousel"
+import { Experts } from "./components/Experts"
 import { Footer } from "./components/Footer"
 import { Hero } from "./components/Hero"
 import { Navbar } from "./components/Navbar"
@@ -13,6 +14,7 @@ const  App = () => (
     <About />
     <Carousel />
     <Products />
+    <Experts />
     <Footer />
   </>
   

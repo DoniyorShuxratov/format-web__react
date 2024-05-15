@@ -9,6 +9,7 @@
 @import url(./style/Carousel.css);
 @import url(./style/Products.css);
 @import url(./style/Footer.css);
+@import url(./style/Experts.css);
 
 
 * {
@@ -41,11 +42,19 @@ body {
 h1 {
   font-size: 32px;
   font-family: 'Poppins', sans-serif;
+  color: var(--main-dark);
 }
 
 p {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
+  color: var(--main-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-dark);
+  
 }
 
 /* box-style */
@@ -103,9 +112,13 @@ p {
 
 /* Flex css */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 62px;
+    line-height: 100%
+  }
   .container {
-      max-width: 1200px;
+      max-width: 1400px;
   }
 }
 

@@ -7,6 +7,13 @@
     flex-direction: column;
     gap: 25px;
 }
+
+.hero-top {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 .hero__left--ptn img {
     position: absolute;
     width: 150px;
@@ -37,3 +44,18 @@
     display: flex;
     justify-content: space-between;
 }
+/* flex css */
+@media only screen and (min-width: 600px) {
+    .hero-top {
+        padding-top: 50px;
+        flex-direction: row;
+    }
+    .hero__left {
+        width: 50%;
+    }
+    .hero__right {
+        padding: 50px;
+        width: 50%;
+    }
+}
+  

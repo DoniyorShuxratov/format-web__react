@@ -1,4 +1,16 @@
-.footer {
-    height: 150px;
+.footer-section {
+    background: var(--main-blue);
+    padding-bottom: 100px;
     width: 100%;
+}
+.footer {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.footer__left {
+    color: var(--main-light);
+}
+.footer__right {
+    color: var(--main-light);
 }
