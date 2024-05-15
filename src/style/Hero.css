@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+}
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.hero__left--ptn img {
+    position: absolute;
+    width: 150px;
+    top: 120px;
+    right: 25px;
+    z-index: -1;
+}
+
+.hero__right--content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero__right--content > img {
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid var(--main-dark);
+}
+
+.hero__right--actives {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero-info {
+    display: flex;
+    justify-content: space-between;
+}

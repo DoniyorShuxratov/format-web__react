@@ -1,0 +1,100 @@
+/* importing font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* importing css */
+
+@import url(./style/Navbar.css);
+@import url(./style/Hero.css);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--main-light);
+}
+
+:root  {
+  --main-blue: #5C5CBC;
+  --main-oragne: #EB9E47;
+  --main-dark: #24242E;
+  --main-light: #E9E9F6;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+/* Text style */
+
+h1 {
+  font-size: 32px;
+}
+
+/* box-style */
+
+.def-box {
+  padding: 15px 15px;
+  position: relative;
+  border-radius: 13px;
+  border: 2px solid var(--main-dark, #24242E);
+  background: var(--main-oragne);
+  /* def-dropshadow */
+  box-shadow: 4px 5px 0px 0px #000;
+}
+
+.empt-box {
+  padding: 15px 15px;
+  position: relative;
+  border-radius: 13px;
+  border: 2px solid var(--main-dark, #24242E);
+  background: var(--main-light);
+}
+
+.def-box-orange {
+  background: var(--main-oragne);
+}
+
+.def-box-light {
+  background: var(--main-light);
+}
+
+.def-box-blue {
+  background: var(--main-blue);
+  color: var(--main-light);
+}
+
+.box-t-50{
+  padding-top: 50px;
+}
+
+.card-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 0px;
+  width: 100%;
+}
+
+.card-top hr {
+  width: 100%;
+  height: 2px;
+  background: var(--main-dark, #24242E);
+  border: #24242E;
+}
+
+/* Flex css */
+
+@media only screen and (min-width: 600px) {
+  .container {
+      max-width: 1200px;
+  }
+}
