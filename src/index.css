@@ -51,7 +51,7 @@ p {
 /* box-style */
 
 .def-box {
-  padding: 15px 15px;
+  padding: 10px ;
   position: relative;
   border-radius: 13px;
   border: 2px solid var(--main-dark, #24242E);
@@ -61,7 +61,7 @@ p {
 }
 
 .empt-box {
-  padding: 15px 15px;
+  padding: 10px ;
   position: relative;
   border-radius: 13px;
   border: 2px solid var(--main-dark, #24242E);
