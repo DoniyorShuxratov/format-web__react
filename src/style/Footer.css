@@ -11,6 +11,6 @@
 .footer__left {
     color: var(--main-light);
 }
-.footer__right {
+.footer__right > p {
     color: var(--main-light);
 }
