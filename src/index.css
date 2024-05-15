@@ -5,6 +5,8 @@
 
 @import url(./style/Navbar.css);
 @import url(./style/Hero.css);
+@import url(./style/About.css);
+@import url(./style/Carousel.css);
 
 
 * {

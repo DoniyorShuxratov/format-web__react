@@ -1,0 +1,65 @@
+
+.inst-section {
+    margin-bottom: 100px;
+}
+.inst-section__carousel {
+    width: 100%;
+    padding-bottom: 10px;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+    /* Hide scrollbar for WebKit (Chrome, Safari) */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+.about-inst {
+    width: calc(60% - 5px);
+    flex-shrink: 0; 
+    margin-left: 15px;
+    display: inline-block;
+    flex-direction: column;
+}
+
+.about-inst__top {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+.about-inst__top--img {
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.about-inst__top--username {
+    width: 80%;
+}
+.about-inst__top--img > img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--main-dark);
+}
+
+.about-inst__img {
+    padding: 10px 0;
+} 
+
+.about-inst__img > img{
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid var(--main-dark);
+}
+
+.about-inst__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-inst__actions--left {
+    display: flex;
+    gap: 15px;
+}
