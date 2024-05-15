@@ -18,7 +18,7 @@ export function Experts() {
                                     <FaUserGraduate scale={25} color="#E9E9F6"/>
                                 </div>
                                 <div className="export-card__content--text">
-                                    <p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p>" Lorem ipsum dolor sit amet.</p>
                                 </div>
                             </div>
                         </div>
@@ -33,7 +33,7 @@ export function Experts() {
                                     <FaUserGraduate scale={25} color="#E9E9F6"/>
                                 </div>
                                 <div className="export-card__content--text">
-                                    <p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p>" Lorem ipsum dolor sit amet.</p>
                                 </div>
                             </div>
                         </div>
@@ -48,7 +48,7 @@ export function Experts() {
                                     <FaUserGraduate scale={25} color="#E9E9F6"/>
                                 </div>
                                 <div className="export-card__content--text">
-                                    <p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                    <p>" Lorem ipsum dolor sit amet.</p>
                                 </div>
                             </div>
                         </div>
