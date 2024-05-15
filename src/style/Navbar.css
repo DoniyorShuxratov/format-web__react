@@ -41,6 +41,9 @@
 }
 
 .header__nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--main-dark);
     text-decoration: none;
 }
