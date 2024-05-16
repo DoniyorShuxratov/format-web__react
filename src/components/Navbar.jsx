@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { AiFillHome, AiFillHeart } from "react-icons/ai";
-import { FaUser } from "react-icons/fa";
-import { RiInformationFill } from "react-icons/ri";
-import { FaBagShopping } from "react-icons/fa6";
+import HomeIcon from '../../public/Icons/home';
+import HeartIcon from '../../public/Icons/heart';
+import PlayerPlayIcon from '../../public/Icons/player_play';
+import UserIcon from '../../public/Icons/user';
 
 export function Navbar() {
     const [activeLink, setActiveLink] = useState('home');
@@ -17,23 +17,23 @@ export function Navbar() {
                 <nav className="header__nav">
                     <ul className="header__nav-list">
                         <li className="header__nav-item">
-                            <a href="#heroSection" className={`header__nav-link ${activeLink === 'home' ? 'def-box' : ''}`} onClick={() => handleClick('home')}>
-                                <AiFillHome size={25}/>
+                            <a href="#heroSection" className={`header__nav-link ${activeLink === 'home' ? 'active-nav' : ''}`} onClick={() => handleClick('home')}>
+                                <HomeIcon size={25} />
                             </a>
                         </li>
                         <li className="header__nav-item">
-                            <a href="#aboutSection" className={`header__nav-link ${activeLink === 'info' ? 'def-box' : ''}`} onClick={() => handleClick('info')}>
-                                <RiInformationFill size={25}/>
+                            <a href="#aboutSection" className={`header__nav-link ${activeLink === 'info' ? 'active-nav' : ''}`} onClick={() => handleClick('info')}>
+                                <HeartIcon size={25}/>
                             </a>
                         </li>
                         <li className="header__nav-item">
-                            <a href="#productSection" className={`header__nav-link ${activeLink === 'heart' ? 'def-box' : ''}`} onClick={() => handleClick('heart')}>
-                                <FaBagShopping size={25}/>
+                            <a href="#productSection" className={`header__nav-link ${activeLink === 'heart' ? 'active-nav' : ''}`} onClick={() => handleClick('heart')}>
+                                <PlayerPlayIcon size={25}/>
                             </a>
                         </li>
                         <li className="header__nav-item">
-                            <a href="#exportSection" className={`header__nav-link ${activeLink === 'user' ? 'def-box' : ''}`} onClick={() => handleClick('user')}>
-                                <FaUser size={25}/>
+                            <a href="#exportSection" className={`header__nav-link ${activeLink === 'user' ? 'active-nav' : ''}`} onClick={() => handleClick('user')}>
+                                <UserIcon size={25}/>
                             </a>
                         </li>
                     </ul>
@@ -45,7 +45,7 @@ export function Navbar() {
 
             <div className="header-pc">
                 <nav className='navbar-pc'>
-                    <div className="navbar-pc__logo">
+                    <div className=" ">
                         <a href="#">format</a>
                     </div>
                     <ul className="navbar-pc__list">

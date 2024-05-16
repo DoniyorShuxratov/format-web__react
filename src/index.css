@@ -56,7 +56,9 @@ a {
   color: var(--main-dark);
   
 }
-
+path {
+  stroke: var(--main-dark)!important;
+}
 /* box-style */
 
 .def-box {

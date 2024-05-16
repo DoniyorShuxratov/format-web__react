@@ -1,18 +1,18 @@
 .header {
-    background: var(--main-light);
+    background: var(--main-dark);
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 10px;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 50px;
     gap: 10px;
     z-index: 1;
 }
-
+.header__nav-link path {
+    stroke: var(--main-light)!important;
+}
 .header-pc {
     display: none;
 }
@@ -27,19 +27,24 @@
 .header__nav {
     display: inline-block;
     width: 100%;
+    transition: all 0.2s ease;
 }
-
+.active-nav {
+    transition: all 0.2s ease;
+    background-color: #ffffff51;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
 .header__nav-list {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style-type: none;
 }
 
 .header__nav-item {
     display: flex;
-    width: 100%;
+
     align-items: center;
     justify-content: center;
 }
