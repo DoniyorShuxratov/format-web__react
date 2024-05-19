@@ -1,0 +1,10 @@
+.bilboard-img {
+    margin: 20px 0px;
+} 
+
+.bilboard-img > img {
+    width: 100%;
+    border: 2px solid var(--main-dark);
+    border-radius: 36px;
+    object-fit: cover;
+}

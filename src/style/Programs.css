@@ -1,0 +1,25 @@
+.programs-section {
+    margin: 25px 0px;
+}
+
+.programs__card {
+    
+}
+.programs__card--list {
+    padding: 10px;
+}
+.program__list--title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.program__list--contain {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.program__list--contain.open {
+    max-height: 200px; /* Set this value according to your content */
+}

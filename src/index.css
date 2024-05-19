@@ -4,12 +4,14 @@
 /* importing css */
 
 @import url(./style/Navbar.css);
+@import url(./style/Bilboard.css);
 @import url(./style/Hero.css);
 @import url(./style/About.css);
-@import url(./style/Carousel.css);
+@import url(./style/ProblemSolution.css);
 @import url(./style/Products.css);
 @import url(./style/Footer.css);
-@import url(./style/Experts.css);
+@import url(./style/Programs.css);
+@import url(./style/Packages.css);
 
 
 * {
@@ -34,19 +36,35 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 20px 20px;
+  padding: 0px 15px;
 }
 
 /* Text style */
 
 h1 {
-  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 35px;
+  font-size: 28px;
+  font-weight: normal;
+  font-family: 'Poppins', sans-serif;
+  color: var(--main-dark);
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: var(--main-dark);
+}
+h3 {
+  font-size: 18px;
+  font-weight: 600;
   font-family: 'Poppins', sans-serif;
   color: var(--main-dark);
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Poppins', sans-serif;
   color: var(--main-dark);
 }
@@ -56,19 +74,50 @@ a {
   color: var(--main-dark);
   
 }
-path {
-  stroke: var(--main-dark)!important;
+
+
+/* button style */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.btn-empt {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  border: none;
+}
+.btn-def {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: var(--main-oragne);
+  border: 2px solid var(--main-dark);
+  border-radius: 50px;
+}
+.btn-dark {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  background-color: var(--main-dark);
+  color: var(--main-light);
+  border-radius: 50px;
 }
 /* box-style */
 
 .def-box {
-  padding: 10px ;
+  padding: 25px ;
   position: relative;
   border-radius: 13px;
   border: 2px solid var(--main-dark, #24242E);
   background: var(--main-oragne);
   /* def-dropshadow */
-  box-shadow: 4px 5px 0px 0px #000;
+  box-shadow: 0px 4px 0px 0px #000;
 }
 
 .empt-box {
@@ -94,6 +143,12 @@ path {
 
 .box-t-50{
   padding-top: 50px;
+}
+
+.card--title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card-top {

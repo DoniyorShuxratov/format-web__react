@@ -1,0 +1,23 @@
+.psinfo-section {
+    margin: 25px 0px;
+    position: relative;
+}
+.psinfo > hr {
+    height: 2px;
+    border: 1px solid var(--main-dark);
+    background: var(--main-dark);
+    width: 100%;
+}
+
+.psinfo__content > hr {
+    height: 2px;
+    border: 1px solid var(--main-dark);
+    background: var(--main-dark);
+    width: 100%;
+}
+
+.psinfo__content--card {
+    border-left: 2px solid var(--main-dark);
+    border-right: 2px solid var(--main-dark);
+    padding: 20px;
+}

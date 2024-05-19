@@ -3,7 +3,7 @@ import HomeIcon from '../../public/Icons/home';
 import HeartIcon from '../../public/Icons/heart';
 import PlayerPlayIcon from '../../public/Icons/player_play';
 import UserIcon from '../../public/Icons/user';
-
+import { useInView, motion as m, useAnimation } from "framer-motion";
 export function Navbar() {
     const [activeLink, setActiveLink] = useState('home');
 
@@ -13,7 +13,17 @@ export function Navbar() {
 
     return (
         <>
-            <div className="header">
+            <m.div 
+            
+            variants={{
+                hidden: {opacity: 0, y:75},
+                visible: {opacity: 1, y: 0},
+            }}
+            initial='hidden'
+            animate='visible'
+            transition={{duration: .2, delay: .5, ease: 'easeOut'}}
+
+            className="header">
                 <nav className="header__nav">
                     <ul className="header__nav-list">
                         <li className="header__nav-item">
@@ -38,7 +48,7 @@ export function Navbar() {
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </m.div>
 
 
             {/* PC navbar */}
