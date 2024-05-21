@@ -1,72 +1,92 @@
 *{
     margin: 0;
 }
+
 .hero {
-    
+    height: 100%;
+    background-image: url(./Images/hero__bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content__active {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 15px;
+}
+
+.hero-content__img {
+    display: flex;
+    align-items: center;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    width: 50%;
+    border-left: 5px solid var(--main-dark);
+    padding: 50px;
 }
-
-.hero-top {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.hero__left {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.hero__left > button {
-    width: 100%;
-}
-
-.hero__left--pattern > img {
+.hero-content__img--1 {
+    z-index: 3;
     position: absolute;
-    width: 100px;
-    right: 30px;
-    top: 40px;
+    top: 350px;
 }
-.hero__right img {
+.hero-content__img--2 {
+    position: relative;
+    z-index: 2;
+}
+.hero-content__img--2 > img {
     width: 100%;
 }
-.hero__right--content {
+.hero-content__img--3 {
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+.hero-content__active--toptext {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    gap: 5px;
 }
 
-.hero__right--content > img {
-    width: 100%;
-    border-radius: 12px;
-    border: 2px solid var(--main-dark);
-}
-
-.hero__right--actives {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.hero-content__active--toptext > svg {
+    width: 20px!important;
 }
 
 .hero-info {
+    background: var(--main-light);
+    padding: 25px;
+}
+
+.hero-info__list {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
-/* flex css */
-@media only screen and (min-width: 600px) {
-    .hero-top {
-        padding-top: 50px;
-        flex-direction: row;
-    }
-    .hero__left {
-        justify-content: center;
-        width: 60%;
-    }
-    .hero__right {
-        padding: 50px;
-        width: 40%;
-    }
+
+.hero-info__list--item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-  
+.item-icon path {
+    stroke: var(--main-light)!important;
+}
+.item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: var(--main-dark);
+}

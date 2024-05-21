@@ -7,21 +7,23 @@ import { Hero } from "./components/Hero"
 import { Navbar } from "./components/Navbar"
 import { Products } from "./components/Products"
 import { Packages } from "./components/Packages"
+import './Fonts/ClashDisplay-Variable.ttf'
 
-
-const  App = () => (
-  <>
-    <Navbar />
-    {/* <Billboard /> */}
-    <Hero />
-    <About />
-    <ProblemSolution />
-    <Products />
-    <Programs />
-    <Packages />
-    <Footer />
-  </>
+export function App(){
   
-)
-
-export default App
+  return(
+    <>
+      <Navbar />
+      <Billboard />
+      <Hero />
+      <About />
+      <ProblemSolution />
+      <Products />
+      <Programs />
+      <Packages />
+      <Footer />
+    </>
+  )
+}
+  
+  

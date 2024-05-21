@@ -1,34 +1,92 @@
-.about-section {
+.about-content {
+    position: relative;
+    padding: 220px 0px;
+}
+.about-content__title {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
     gap: 15px;
 }
-
-.about__card {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.about__card > hr {
-    background: var(--main-dark);
-    height: 2px;
-}
-
-.about__card--top {
+.about-content__title--toptext {
     display: flex;
     align-items: center;
+    gap: 10px;
+}
+
+.about-content__title--paragraph {
+    width: 70%;
+    text-align: center;
+}
+.about-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.about-card__left {
+    max-width: 45%;
+    height: 100%;
+    position: relative;
+}
+.about-card__left--img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 101%;
+    border-right: 5px solid var(--main-dark);
+}
+
+.about-card__left--img > input {
+
+}
+
+.about-card__left--img > video {
+    border-radius: 31px 0px 0px 31px;
+    width: 100%;
+    object-fit: cover;
+    max-width: 100%;
+    display: inline-block;
+}
+.about-card__left--img:hover > video {
+    cursor: pointer;
+}
+.about-card__right {
+    width: 100%;
+    height: 100%;
+    gap: 100px;
+    flex: 1;
+    padding: 30px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
     justify-content: space-between;
 }
 
-.about__card--text > h3 {
-    margin: 5px 0px;
+.about-section__pattern {
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    right: -40px;
 }
 
-.vieo {
-    width: 100%;
-    height: 400px;
-    border: 2px solid var(--main-dark);
-    border-radius: 13px;
-    background-color: var(--main-blue);
+.play-button {
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    right: 25px;
 }
+
+.progress-bar {
+    position: absolute;
+    z-index: 1;
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+}
+

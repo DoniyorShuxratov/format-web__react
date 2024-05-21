@@ -1,5 +1,4 @@
 /* importing font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* importing css */
 
@@ -13,19 +12,27 @@
 @import url(./style/Programs.css);
 @import url(./style/Packages.css);
 
+@font-face {
+  font-family: 'ClashDislpay';
+  src: url(./Fonts/ClashDisplay-Variable.ttf);
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'ClashDislpay', sans-serif;
   scroll-behavior: smooth;
 }
 
 body {
-  background: var(--main-light);
+  background: #F4EDDC;
 }
-
+hr {
+  height: 5px;
+  background: var(--main-dark);
+  border: 1px solid var(--main-dark);
+}
 :root  {
   --main-blue: #5C5CBC;
   --main-oragne: #EB9E47;
@@ -34,7 +41,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 1200px;
   margin: 0 auto;
   padding: 0px 15px;
 }
@@ -42,30 +49,31 @@ body {
 /* Text style */
 
 h1 {
-  text-transform: uppercase;
-  line-height: 35px;
-  font-size: 28px;
-  font-weight: normal;
-  font-family: 'Poppins', sans-serif;
-  color: var(--main-dark);
+  color: var(--main-dark, #24242E);
+  font-family: "ClashDislpay",sans-serif ;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 48px;
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'ClashDislpay', sans-serif;
   color: var(--main-dark);
 }
 h3 {
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'ClashDislpay', sans-serif;
   color: var(--main-dark);
 }
 
 p {
-  font-size: 14px;
-  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'ClashDislpay', sans-serif;
   color: var(--main-dark);
 }
 
@@ -77,72 +85,56 @@ a {
 
 
 /* button style */
+
+button {
+  background: none;
+  border: none;
+  text-align: start;
+  cursor: pointer;
+}
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 20px;
   gap: 5px;
-}
-.btn-empt {
   cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-  background: none;
-  border: none;
+  transition: all 0.2s ease-in-out;
 }
-.btn-def {
-  cursor: pointer;
+
+.btn-primary {
+  background: var(--main-dark);
+  color: var(--main-light, #E9E9F6);
+  font-family: "Clash Display";
   font-size: 16px;
+  font-style: normal;
   font-weight: 500;
-  padding: 10px 20px;
-  background-color: var(--main-oragne);
-  border: 2px solid var(--main-dark);
+  line-height: normal;
   border-radius: 50px;
+  border: 4px solid var(--main-dark);
 }
-.btn-dark {
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 10px 20px;
-  background-color: var(--main-dark);
-  color: var(--main-light);
-  border-radius: 50px;
+
+.btn-primary:hover {
+  transform: translateY(-5px);
+  background: var(--main-light);
+  color: var(--main-dark);
+}
+
+.btn-primary path {
+  stroke: var(--main-light)!important;
+}
+.btn-primary:hover path {
+  stroke: var(--main-dark)!important;
 }
 /* box-style */
 
 .def-box {
-  padding: 25px ;
-  position: relative;
-  border-radius: 13px;
-  border: 2px solid var(--main-dark, #24242E);
-  background: var(--main-oragne);
-  /* def-dropshadow */
-  box-shadow: 0px 4px 0px 0px #000;
-}
+  border-radius: 36px;
+  border: 5px solid var(--main-dark, #24242E);
+  background: var(--main-light, #E9E9F6);
 
-.empt-box {
-  padding: 10px ;
-  position: relative;
-  border-radius: 13px;
-  border: 2px solid var(--main-dark, #24242E);
-  background: var(--main-light);
-}
-
-.def-box-orange {
-  background: var(--main-oragne);
-}
-
-.def-box-light {
-  background: var(--main-light);
-}
-
-.def-box-blue {
-  background: var(--main-blue);
-  color: var(--main-light);
-}
-
-.box-t-50{
-  padding-top: 50px;
+  /* def-box */
+  box-shadow: 0px 11px 0px 0px var(--main-dark, #24242E);
 }
 
 .card--title {
@@ -167,15 +159,5 @@ a {
   border: #24242E;
 }
 
-/* Flex css */
 
-@media only screen and (min-width: 1200px) {
-  h1 {
-    font-size: 62px;
-    line-height: 100%
-  }
-  .container {
-      max-width: 1400px;
-  }
-}
 

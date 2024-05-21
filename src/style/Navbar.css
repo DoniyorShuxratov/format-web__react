@@ -67,36 +67,53 @@
 
 .header-pc {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 15px 0px;
+    bottom: 0;
+    padding: 25px 0px;
+    margin: auto 0;
     z-index: 1; 
-    background: var(--main-light);
+    background: none;
     width: 100%;
     align-items: center;
     justify-content: center;
 }
-
-.navbar-pc {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1350px;
+.navbar-pc__container {
+    background-color: var(--main-dark);
+    padding: 5px 52px;
+    border-radius: 50px;
+    gap: 25px;
 }
-
-.navbar-pc ul, li{
-    list-style: none;
-}
-.navbar-pc__logo > a {
-    font-weight: bold;
-    color: var(--main-blue);
-}
-
 .navbar-pc__list {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 10px;
+}
+.navbar-pc__list a {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--main-light);
+}
+
+.navbar-pc__container ul{
+    list-style: none;
+}
+.navbar-pc__item {
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+    padding: 15px;
+    list-style: none;
+}
+.navbar-pc__item:hover {
+    cursor: pointer;
+    background: #ffffff6a;
+}
+.navbar-pc__item--logo {
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+    padding: 15px;
+    list-style: none;
+}
+.navbar-pc__item--logo > a {
+    color: var(--main-blue);
 }
 /* Flex css */
 

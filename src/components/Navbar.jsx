@@ -53,18 +53,24 @@ export function Navbar() {
 
             {/* PC navbar */}
 
-            <div className="header-pc">
-                <nav className='navbar-pc'>
-                    <div className=" ">
-                        <a href="#">format</a>
-                    </div>
+            <m.div
+            variants={{
+                hidden: {opacity: 0, y:75},
+                visible: {opacity: 1, y: 0},
+            }}
+            initial='hidden'
+            animate='visible'
+            transition={{duration: .2, delay: .5, ease: 'easeOut'}}
+            className="header-pc">
+                <nav className='navbar-pc__container'>
                     <ul className="navbar-pc__list">
-                        <li><a href="#">Biz haqimizda</a></li>
-                        <li><a href="#">Produktlar</a></li>
-                        <li><a href="#">Expertlar</a></li>
+                        <li className='navbar-pc__item--logo'><a className='navbar-pc__item--link' href="#">format</a></li>
+                        <li className='navbar-pc__item'><a className='navbar-pc__item--link' href="#">Biz haqimizda</a></li>
+                        <li className='navbar-pc__item'><a className='navbar-pc__item--link' href="#">Produktlar</a></li>
+                        <li className='navbar-pc__item'><a className='navbar-pc__item--link' href="#">Expertlar</a></li>
                     </ul>
                 </nav>
-            </div>
+            </m.div>
         </>
     );
 }

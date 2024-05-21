@@ -12,41 +12,44 @@ export function ProblemSolution() {
     <section className="psinfo-section">
       <div className="psinfo">
         <hr />
-          <div className="psinfo__content container">
-            <div className="psinfo__content--card">
-              <div className="card--title">
-                <h3>Lorem ipsum dolor fit amet</h3>
-                <Pattern_1 />
+        <div className="psinfo__content container">
+          <div className="psinfo__left">
+            <div className="psinfo__left--top">
+              <div className="psinfo__content--card">
+                <div className="card--title">
+                  <h3>Darsga tayyorgarlik </h3>
+                  <Pattern_1 />
+                </div>
+                <p>oʻqituvchilardan qoʻshimcha vaqt va kuch talab qiladi. Natijada ustozlarning eʼtibori asosiy vazifasi - dars oʻtishdan chalgʻiydi. Bizning oʻquv dasturimizda esa toʻliq yillik darslar rejalashtirilgan boʻladi. Ustozlar tayyorgarlik uchun taxminan 20 daqiqa sarflashlari yetarli boʻladi.</p>
               </div>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum aliquid laudantium blanditiis, quae aperiam rem! ipsum dolor, sit amet consectetur adipisicing elit. Laborum aliquid laudantium blanditiis, quae aperiam rem!</p>
+              <div className="psinfo__content--card">
+                <div className="card--title">
+                  <h3>AT tez oʻsuvchan soha.</h3>
+                  <Pattern_star_2 />
+                </div>
+                <p>Natijada darsliklardagi bilimlar oson eskirishi mumkin. Format oʻquv dasturida mavzular zamon talablariga moslanib,  yangilanib turadi.</p>
+              </div>
             </div>
-            <hr />
-            <div className="psinfo__content--card">
-              <div className="card--title">
-                <h3>Lorem ipsum dolor fit amet</h3>
-                <Pattern_star_2 />
+            <div className="psinfo__left--bottom">
+              <div className="psinfo__content--card">
+                <div className="card--title">
+                  <h3>Maktab oʻqituvchilarining ishlash davri</h3>
+                  <Pattern_star_3 />
+                </div>
+                <p>oʻrtacha 30 yil hisoblanadi. Bu vaqtda ustozlarning ham pedogogik, ham sohaga oid bilimi eskiradi. Bizning dastur esa oʻqituchilarga muntazam treninglar tashkil qilishni taklif qilib, ustozlarni qiynayotgan muammolarga yechim beramiz</p>
               </div>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum aliquid laudantium blanditiis, quae aperiam rem! ipsum dolor, sit amet consectetur adipisicing elit. Laborum aliquid laudantium blanditiis, quae aperiam rem!</p>
+              <div className="psinfo__content--card">
+                <div className="card--title">
+                  <h3>Maktabda oʻrgatiladigan nazariy bilimlar</h3>
+                  <Pattern_star_4 />
+                </div>
+                <p>odatda amaliyotda yaroqsiz hisoblanadi. Formatda esa darslar amaliy konikmalarni rivojlantirishga qaratilgan.</p>
+              </div>
             </div>
           </div>
-        <hr />
-          <div className="psinfo__content container">
-            <div className="psinfo__content--card">
-              <div className="card--title">
-                <h3>Lorem ipsum dolor fit amet</h3>
-                <Pattern_star_3 />
-              </div>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum aliquid laudantium blanditiis, quae aperiam rem! ipsum dolor, sit amet consectetur adipisicing elit. Laborum aliquid laudantium blanditiis, quae aperiam rem!</p>
-            </div>
-            <hr />
-            <div className="psinfo__content--card">
-              <div className="card--title">
-                <h3>Lorem ipsum dolor fit amet</h3>
-                <Pattern_star_4 />
-              </div>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum aliquid laudantium blanditiis, quae aperiam rem! ipsum dolor, sit amet consectetur adipisicing elit. Laborum aliquid laudantium blanditiis, quae aperiam rem!</p>
-            </div>
+          <div className="psinfo__right">
           </div>
+        </div>
         <hr />
       </div>
     </section>

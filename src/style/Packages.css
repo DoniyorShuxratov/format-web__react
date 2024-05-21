@@ -1,20 +1,21 @@
 .packages-section {
-    margin-bottom: 25px;
+    margin-bottom: 100px;
 }
 
 .packages {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 50px;
 }
 
 .packages-card {
+    width: 100%;
     border: 2px solid var(--main-dark);
-    border-radius: 14px;
+    border-radius: 15px;
     box-shadow: 0px 4px 0px 0px var(--main-dark);    
 }
 .packages-card__top {
-    border-radius: 14px;
+    border-radius: 13px;
     padding: 25px;
     display: flex;
     flex-direction: column;
@@ -53,3 +54,12 @@
 .pc-card--3 {
     background: var(--main-oragne);
 }
+
+/* flex css */
+@media only screen and (min-width: 600px) {
+    .packages {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+  
