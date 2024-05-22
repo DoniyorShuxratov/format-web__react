@@ -94,7 +94,7 @@ export function Hero() {
                     animate={mainControl}
                     transition={{   
                         duration: 0.7,
-                        delay: 0.5,
+                        delay: 0.7,
                         ease: [0, 0.71, 0.2, 1.01]
                     }}
 

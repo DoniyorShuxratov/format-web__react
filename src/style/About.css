@@ -1,6 +1,6 @@
 .about-content {
     position: relative;
-    padding: 220px 0px;
+    padding: 150px 0px;
 }
 .about-content__title {
     display: flex;
@@ -42,9 +42,6 @@
     border-right: 5px solid var(--main-dark);
 }
 
-.about-card__left--img > input {
-
-}
 
 .about-card__left--img > video {
     border-radius: 31px 0px 0px 31px;
@@ -59,7 +56,7 @@
 .about-card__right {
     width: 100%;
     height: 100%;
-    gap: 100px;
+    gap: 21px;
     flex: 1;
     padding: 30px 35px;
     display: flex;

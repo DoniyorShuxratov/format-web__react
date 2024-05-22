@@ -8,6 +8,7 @@ import { Navbar } from "./components/Navbar"
 import { Products } from "./components/Products"
 import { Packages } from "./components/Packages"
 import './Fonts/ClashDisplay-Variable.ttf'
+import { Blog } from "./components/Blog"
 
 export function App(){
   
@@ -18,6 +19,7 @@ export function App(){
       <Hero />
       <About />
       <ProblemSolution />
+      <Blog/>
       <Products />
       <Programs />
       <Packages />

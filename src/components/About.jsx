@@ -87,7 +87,7 @@ export function About() {
                             className="about-card def-box">
                                 <div className="about-card__left">
                                     <div className="about-card__left--img">
-                                        <video onClick={handlePlayPause} ref={videoRef} src="./Video/video.mp4"></video>
+                                        <video onClick={handlePlayPause} ref={videoRef} src="https://ik.imagekit.io/imagesOptimaization/Video/video%20compressed%20480.mp4?updatedAt=1716375288718"></video>
                                         <button className="play-button">
                                             {isPlaying ? <Pause/> : <PlayerPlayIcon/>}
                                         </button>

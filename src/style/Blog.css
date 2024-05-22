@@ -1,0 +1,35 @@
+.blog-section {
+    margin-top: 100px;
+}
+.blog-container {
+    background-color: #A7A7F0;
+}
+
+.blog-content {
+    padding: 50px 0px;
+}
+.blog-content__pattern {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+.blog-content__pattern--1 {
+    position: absolute;
+    top: -100px;
+    left: 150px;
+}
+.blog-content__pattern--2 {
+    position: absolute;
+    right: 150px;
+    top: 150px;
+}
+.blog-title {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+}

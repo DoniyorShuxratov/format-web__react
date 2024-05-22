@@ -1,22 +1,44 @@
+.programs {
+    position: relative;
+}
 .programs-section {
-    margin: 100px 0px;
+    background: var(--main-dark);
+    padding: 100px 0px;
 }
 
-.programs__card--list {
-    padding: 10px;
-}
 .program__list--title {
+    cursor: url('./Images/pointer_1.svg'), auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 25px;
+}
+
+.programs-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.programs-title > h2 {
+    color: var(--main-light)
 }
 
 .program__list--contain {
+    padding-left: 25px;
+    padding-right: 25px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
 }
 
 .program__list--contain.open {
-    max-height: 200px; /* Set this value according to your content */
+    max-height: 200px; 
+}
+
+.programs__pattern {
+    position: absolute;
+    top: -150px;
+    right: 150px;
 }

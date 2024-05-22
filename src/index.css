@@ -7,6 +7,7 @@
 @import url(./style/Hero.css);
 @import url(./style/About.css);
 @import url(./style/ProblemSolution.css);
+@import url(./style/Blog.css);
 @import url(./style/Products.css);
 @import url(./style/Footer.css);
 @import url(./style/Programs.css);
@@ -27,6 +28,8 @@
 
 body {
   background: #F4EDDC;
+  cursor: url('./Images/auto_1.svg'), auto;
+  
 }
 hr {
   height: 5px;
@@ -37,7 +40,7 @@ hr {
   --main-blue: #5C5CBC;
   --main-oragne: #EB9E47;
   --main-dark: #24242E;
-  --main-light: #E9E9F6;
+  --main-light: #f3f3fa;
 }
 
 .container {
@@ -82,7 +85,9 @@ a {
   color: var(--main-dark);
   
 }
-
+a:hover {
+  cursor: url('./Images/pointer_1.svg'), auto;
+}
 
 /* button style */
 
@@ -90,19 +95,19 @@ button {
   background: none;
   border: none;
   text-align: start;
-  cursor: pointer;
+  cursor: url('./Images/pointer_1.svg'), auto;
 }
 .btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 20px;
   gap: 5px;
-  cursor: pointer;
+  cursor: url('./Images/pointer_1.svg'), auto;
   transition: all 0.2s ease-in-out;
 }
 
 .btn-primary {
+  padding: 10px 20px;
   background: var(--main-dark);
   color: var(--main-light, #E9E9F6);
   font-family: "Clash Display";
@@ -125,6 +130,40 @@ button {
 }
 .btn-primary:hover path {
   stroke: var(--main-dark)!important;
+}
+
+
+.btn-secondary {
+  padding: 10px 20px;
+  background: var(--main-light);
+  color: var(--main-dark, #E9E9F6);
+  font-family: "Clash Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 50px;
+  border: 4px solid var(--main-dark);
+}
+.btn-secondary.active {
+  background: var(--main-dark);
+  color: var(--main-light, #E9E9F6);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-5px);
+  background: var(--main-dark);
+  color: var(--main-light);
+}
+.btn-empt {
+  background: none;
+  color: var(--main-dark);
+  font-family: "Clash Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 50px;
 }
 /* box-style */
 

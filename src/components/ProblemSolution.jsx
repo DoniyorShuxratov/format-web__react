@@ -1,56 +1,99 @@
 import React from 'react';
-import ArrowTopRight from '../../public/Icons/arrow_top_right';
-import Pattern_1 from '../../public/Pattern/spark_23';
-import Pattern_star_2 from '../../public/Pattern/spark_32';
-import Pattern_star_3 from '../../public/Pattern/spark_67';
-import Pattern_star_4 from '../../public/Pattern/spark_68';
-import Pattern_star_5 from '../../public/Pattern/spark_88';
+
+import { motion as m } from "framer-motion";
+import { UseInViewAnimation } from './Animation';
 
 export function ProblemSolution() {
-
+  const { ref, mainControl } = UseInViewAnimation();
   return (
-    <section className="psinfo-section">
-      <div className="psinfo">
-        <hr />
-        <div className="psinfo__content container">
-          <div className="psinfo__left">
-            <div className="psinfo__left--top">
-              <div className="psinfo__content--card">
-                <div className="card--title">
-                  <h3>Darsga tayyorgarlik </h3>
-                  <Pattern_1 />
+    <section id='problemSolution' className="psinfo-section">
+      <div className="psinfo-container container">
+        <div className="psinfo-content" ref={ref}>
+          <m.div 
+          
+          variants={{
+            hidden: {opacity: 0, y: 75},
+            visable: {opacity: 1, y: 0},
+          }}
+          initial='hidden'
+          animate={mainControl}
+          transition={{   
+              duration: 0.5,
+              delay: 0.7,
+              ease: [0, 0.71, 0.2, 1.01]
+          }}
+
+          className="psinfo-title">
+            <h2>Problem Solution</h2>
+          </m.div>
+          <div className="psinfo-actives">
+            <div className="psinfo-list">
+              <m.div 
+              
+              variants={{
+                hidden: {opacity: 0, y: 75},
+                visable: {opacity: 1, y: 0},
+              }}
+              initial='hidden'
+              animate={mainControl}
+              transition={{   
+                  duration: 0.5,
+                  delay: 1,
+                  ease: [0, 0.71, 0.2, 1.01]
+              }}
+              
+              className="psinfo-list--cards">
+                <div className="psinfo-list__card">
+                  <div className="psinfo-list__card--top">
+                    <h3>Problema #1</h3>
+                  </div>
+                  <div className="psinfo-list__card--paragraph">
+                    <p>AT tez oʻsuvchan soha. Natijada darsliklardagi bilimlar oson eskirishi mumkin. </p>
+                  </div>
                 </div>
-                <p>oʻqituvchilardan qoʻshimcha vaqt va kuch talab qiladi. Natijada ustozlarning eʼtibori asosiy vazifasi - dars oʻtishdan chalgʻiydi. Bizning oʻquv dasturimizda esa toʻliq yillik darslar rejalashtirilgan boʻladi. Ustozlar tayyorgarlik uchun taxminan 20 daqiqa sarflashlari yetarli boʻladi.</p>
-              </div>
-              <div className="psinfo__content--card">
-                <div className="card--title">
-                  <h3>AT tez oʻsuvchan soha.</h3>
-                  <Pattern_star_2 />
+                <div className="psinfo-list__card">
+                  <div className="psinfo-list__card--top">
+                    <h3>Problema #1</h3>
+                  </div>
+                  <div className="psinfo-list__card--paragraph">
+                    <p>AT tez oʻsuvchan soha. Natijada darsliklardagi bilimlar oson eskirishi mumkin. <br /><br /> AT tez oʻsuvchan soha. Natijada darsliklardagi bilimlar oson eskirishi mumkin. </p>
+                  </div>
                 </div>
-                <p>Natijada darsliklardagi bilimlar oson eskirishi mumkin. Format oʻquv dasturida mavzular zamon talablariga moslanib,  yangilanib turadi.</p>
-              </div>
+                <div className="psinfo-list__card">
+                  <div className="psinfo-list__card--top">
+                    <h3>Problema #1</h3>
+                  </div>
+                  <div className="psinfo-list__card--paragraph">
+                    <p>Maktab oʻqituvchilarining ishlash davri oʻrtacha 30 yil hisoblanadi. Bu vaqtda ustozlarning ham pedogogik, ham sohaga oid bilimi eskiradi.<br /><br />Bizning dastur esa oʻqituchilarga muntazam treninglar tashkil qilishni taklif qilib, ustozlarni qiynayotgan muammolarga yechim beramiz</p>
+                  </div>
+                </div>
+                <div className="psinfo-list__card">
+                  <div className="psinfo-list__card--top">
+                    <h3>Problema #1</h3>
+                  </div>
+                  <div className="psinfo-list__card--paragraph">
+                    <p>Maktab oʻqituvchilarining ishlash davri oʻrtacha 30 yil hisoblanadi. Bu vaqtda ustozlarning ham pedogogik, ham sohaga oid bilimi eskiradi. <br /><br /> Bizning dastur esa oʻqituchilarga muntazam treninglar tashkil qilishni taklif qilib, ustozlarni qiynayotgan muammolarga yechim beramiz</p>
+                  </div>
+                </div>
+              </m.div>
+              <m.div 
+              
+              variants={{
+                hidden: {opacity: 0, y: 75},
+                visable: {opacity: 1, y: 0},
+              }}
+              initial='hidden'
+              animate={mainControl}
+              transition={{   
+                  duration: 0.7,
+                  delay: 1,
+                  ease: [0, 0.71, 0.2, 1.01]
+              }}
+              
+              className="psinfo-list__img"></m.div>
             </div>
-            <div className="psinfo__left--bottom">
-              <div className="psinfo__content--card">
-                <div className="card--title">
-                  <h3>Maktab oʻqituvchilarining ishlash davri</h3>
-                  <Pattern_star_3 />
-                </div>
-                <p>oʻrtacha 30 yil hisoblanadi. Bu vaqtda ustozlarning ham pedogogik, ham sohaga oid bilimi eskiradi. Bizning dastur esa oʻqituchilarga muntazam treninglar tashkil qilishni taklif qilib, ustozlarni qiynayotgan muammolarga yechim beramiz</p>
-              </div>
-              <div className="psinfo__content--card">
-                <div className="card--title">
-                  <h3>Maktabda oʻrgatiladigan nazariy bilimlar</h3>
-                  <Pattern_star_4 />
-                </div>
-                <p>odatda amaliyotda yaroqsiz hisoblanadi. Formatda esa darslar amaliy konikmalarni rivojlantirishga qaratilgan.</p>
-              </div>
-            </div>
-          </div>
-          <div className="psinfo__right">
           </div>
         </div>
-        <hr />
       </div>
     </section>
   );
