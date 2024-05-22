@@ -67,30 +67,8 @@ export function ProblemSolution() {
                     <p>Maktab oʻqituvchilarining ishlash davri oʻrtacha 30 yil hisoblanadi. Bu vaqtda ustozlarning ham pedogogik, ham sohaga oid bilimi eskiradi.<br /><br />Bizning dastur esa oʻqituchilarga muntazam treninglar tashkil qilishni taklif qilib, ustozlarni qiynayotgan muammolarga yechim beramiz</p>
                   </div>
                 </div>
-                <div className="psinfo-list__card">
-                  <div className="psinfo-list__card--top">
-                    <h3>Problema #1</h3>
-                  </div>
-                  <div className="psinfo-list__card--paragraph">
-                    <p>Maktab oʻqituvchilarining ishlash davri oʻrtacha 30 yil hisoblanadi. Bu vaqtda ustozlarning ham pedogogik, ham sohaga oid bilimi eskiradi. <br /><br /> Bizning dastur esa oʻqituchilarga muntazam treninglar tashkil qilishni taklif qilib, ustozlarni qiynayotgan muammolarga yechim beramiz</p>
-                  </div>
-                </div>
+
               </m.div>
-              <m.div 
-              
-              variants={{
-                hidden: {opacity: 0, y: 75},
-                visable: {opacity: 1, y: 0},
-              }}
-              initial='hidden'
-              animate={mainControl}
-              transition={{   
-                  duration: 0.7,
-                  delay: 1,
-                  ease: [0, 0.71, 0.2, 1.01]
-              }}
-              
-              className="psinfo-list__img"></m.div>
             </div>
           </div>
         </div>

@@ -35,7 +35,7 @@ export function Products() {
         setSelectedCategory(category);
     };
 
-    const filteredProducts = selectedCategory === 'Taqdimotlar'
+    const filteredProducts = selectedCategory === 'All'
         ? productData
         : productData.filter(product => product.category === selectedCategory);
 
@@ -77,7 +77,7 @@ export function Products() {
 
                     className="product-filter">
                         <div className="product-filter__list">
-                            {[ 'Taqdimotlar', 'Videolar', 'Tarqatma materiallar', 'Scenariylar'].map(category => (
+                            {['Taqdimotlar', 'Videolar', 'Tarqatma materiallar', 'Scenariylar'].map(category => (
                                 <button
                                     key={category}
                                     className={`btn btn-secondary product-filter__list--item ${selectedCategory === category ? 'active' : ''}`}
@@ -101,7 +101,7 @@ export function Products() {
                         delay: 1.2,
                         ease: [0, 0.71, 0.2, 1.01]
                     }}
-                    
+
                     className="product-cards">
                         {filteredProducts.map(product => (
                             <div className="product-card def-box" key={product.id}>
