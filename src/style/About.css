@@ -87,3 +87,23 @@
     right: 25px;
 }
 
+@media (width < 750px) {
+    .about-card {
+        flex-direction: column;
+    }
+    .about-content {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 50px;
+    }
+    .about-card__left {
+        max-width: 99%;
+    } 
+    .about-card__left--img {
+        border-right: none;
+        border-bottom: 4px solid var(--main-dark);
+    }
+    .about-card__left--img > video {
+        border-radius: 31px 31px 0px 0px ;
+    }
+}

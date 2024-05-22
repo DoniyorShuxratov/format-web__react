@@ -35,3 +35,15 @@
     border-radius: 34px;
     border: 4px solid var(--main-dark);
 }
+
+@media (width < 750px) {
+    .psinfo-section {
+        padding: 0px 10px;
+    }
+    .psinfo-list--cards {
+        flex-direction: column;
+    }
+    .psinfo-list__card {
+        width: 100%;
+    }
+}

@@ -96,3 +96,17 @@
     cursor: url('./Images/pointer_1.svg'), auto;
     transform: translateY(-10px);
 }
+
+@media (width < 750px) {
+    .packages-list {
+        flex-direction: column;
+    }
+
+    .packages-list {
+        position: relative;
+    }
+
+    .packages-section {
+        padding-bottom: 25px;
+    }
+}

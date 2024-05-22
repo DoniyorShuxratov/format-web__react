@@ -90,3 +90,46 @@
     border-radius: 50px;
     background: var(--main-dark);
 }
+
+@media (width < 750px) {
+    .hero {
+        background: #D7EBFF;
+    }
+    .hero-content {
+        flex-direction: column;
+    }
+    .hero-info__list {
+        flex-wrap: wrap;
+    }
+    .hero-content__img {
+        width: 100%;
+        padding: 50px 0px;
+        border-left: none;
+        border-top: 5px solid var(--main-dark);
+    }
+    
+    .hero-content__active {
+        align-items: center;
+        text-align: center;
+        padding: 25px 0px;
+        width: 100%;
+    }
+
+    .hero-content__img--1 {
+        top: 250px;
+    }
+    .hero-content__img--1 > img {
+        transform: scale(0.7);
+    }
+
+    .hero-content__img--2 > img {
+        width: 100%;
+    }
+
+    .hero-content__img--3 {
+        left: 130px;
+    }
+    .hero-content__img--3 > img {
+        transform: scale(0.7);
+    }
+}
