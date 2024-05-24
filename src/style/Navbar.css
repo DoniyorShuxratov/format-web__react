@@ -8,7 +8,7 @@
     padding: 10px;
     border-radius: 50px;
     gap: 10px;
-    z-index: 2;
+    z-index: 55;
 }
 .header__nav-link path {
     stroke: var(--main-light)!important;
@@ -70,6 +70,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    z-index: 55;
 }
 .navbar-pc__container {
     background-color: var(--main-dark);

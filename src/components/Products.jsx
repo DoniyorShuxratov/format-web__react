@@ -84,7 +84,7 @@ export function Products(){
                         }}
                         className="product-filter">
                         <div className="product-filter__list">
-                            {['Taqdimotlar', 'Videolar', 'Tarqatma materiallar', 'Scenariylar'].map(category => (
+                            {['Taqdimotlar', 'Videolar', 'Tarqatma materiallar', 'Ssenariylar'].map(category => (
                                 <button
                                     key={category}
                                     className={`btn btn-secondary product-filter__list--item ${selectedCategory === category ? 'active' : ''}`}

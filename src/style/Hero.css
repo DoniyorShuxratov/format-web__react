@@ -91,6 +91,15 @@
     background: var(--main-dark);
 }
 
+@media (width < 1300px) {
+    .hero-content__img--3 {
+        z-index: 1;
+        position: absolute;
+        top: 50px;
+        left: 220px;
+    }
+}
+
 @media (width < 750px) {
     .hero {
         background: #D7EBFF;
@@ -133,3 +142,4 @@
         transform: scale(0.7);
     }
 }
+

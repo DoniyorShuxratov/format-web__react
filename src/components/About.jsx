@@ -46,7 +46,7 @@ export function About() {
                                 <Star_1/>
                             </div>
                             <div className="about-content__title--title">
-                                <h2>Format loihasi</h2>
+                                <h2>Format loyihasi</h2>
                             </div>
                             <div className="about-content__title--paragraph">
                                 <p>Format - boshlangʻich sinflar uchun AT (axborot texnologiyalari) savodxonligi oʻquv dasturi. Biz maktablarning boshlangʻich sinflari uchun informatika darslarini samarali tashkil qilishda koʻmaklashamiz.</p>

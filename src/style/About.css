@@ -87,6 +87,13 @@
     right: 25px;
 }
 
+@media (width < 1300px) {
+    .about-section__pattern {
+        top: 30%;
+        right: 11px;
+    }
+}
+ 
 @media (width < 750px) {
     .about-card {
         flex-direction: column;
@@ -122,3 +129,4 @@
         border-radius: 31px 31px 0px 0px ;
     }
 }
+

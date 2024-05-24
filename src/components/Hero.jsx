@@ -128,7 +128,7 @@ export function Hero() {
                             <div className="item-icon">
                                 <FileDocument/>
                             </div>
-                            <h3>Scenariylar</h3>
+                            <h3>Ssenariylar</h3>
                         </div>
                     </m.div>
                 </div>
