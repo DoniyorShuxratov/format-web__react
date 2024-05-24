@@ -64,7 +64,7 @@ export function Products(){
                         animate={mainControl}
                         transition={{   
                             duration: 0.8,
-                            delay: 0.7,
+                            delay: 0.5,
                             ease: [0, 0.71, 0.2, 1.01]
                         }}
                         className="product-title">
@@ -78,8 +78,8 @@ export function Products(){
                         initial='hidden'
                         animate={mainControl}
                         transition={{   
-                            duration: 0.7,
-                            delay: 1,
+                            duration: 0.8,
+                            delay: 0.7,
                             ease: [0, 0.71, 0.2, 1.01]
                         }}
                         className="product-filter">
@@ -104,7 +104,7 @@ export function Products(){
                         animate={mainControl}
                         transition={{   
                             duration: 0.7,
-                            delay: 1.2,
+                            delay: 1,
                             ease: [0, 0.71, 0.2, 1.01]
                         }}
                         className="product-cards">

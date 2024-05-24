@@ -1,6 +1,9 @@
 
+import Image02 from '../../public/Icons/Image02';
 import ArrowTopRight from '../../public/Icons/arrow_top_right';
 import Edit from '../../public/Icons/edit';
+import FileDocument from '../../public/Icons/file_document';
+import PlayerPlayIcon from '../../public/Icons/player_play';
 import Star_1 from '../../public/Pattern/star_1';
 import Star_2 from '../../public/Pattern/star_2';
 import Vector_3 from '../../public/Pattern/vector_3';
@@ -109,21 +112,21 @@ export function Hero() {
                         <Star_1/>
                         <div className="hero-info__list--item">
                             <div className="item-icon">
-                                <Edit/>
+                                <Image02/>
                             </div>
                             <h3>Taqdimotlar</h3>
                         </div>
                         <Star_1/>
                         <div className="hero-info__list--item">
                             <div className="item-icon">
-                                <Edit/>
+                                <PlayerPlayIcon/>
                             </div>
                             <h3>Videolar</h3>
                         </div>
                         <Star_1/>
                         <div className="hero-info__list--item">
                             <div className="item-icon">
-                                <Edit/>
+                                <FileDocument/>
                             </div>
                             <h3>Scenariylar</h3>
                         </div>

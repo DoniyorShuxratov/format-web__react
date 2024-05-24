@@ -14,7 +14,7 @@
 @import url(./style/Packages.css);
 
 @font-face {
-  font-family: 'ClashDislpay';
+  font-family: 'ClashDisplay';
   src: url(./Fonts/ClashDisplay-Variable.ttf);
 }
 
@@ -22,7 +22,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'ClashDislpay', sans-serif;
+  font-family: 'ClashDisplay', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -53,7 +53,7 @@ hr {
 
 h1 {
   color: var(--main-dark, #24242E);
-  font-family: "ClashDislpay",sans-serif ;
+  font-family: "ClashDisplay",sans-serif ;
   font-size: 62px;
   font-style: normal;
   font-weight: 700;
@@ -63,20 +63,20 @@ h1 {
 h2 {
   font-size: 48px;
   font-weight: 600;
-  font-family: 'ClashDislpay', sans-serif;
+  font-family: 'ClashDisplay', sans-serif;
   color: var(--main-dark);
 }
 h3 {
   font-size: 28px;
   font-weight: 600;
-  font-family: 'ClashDislpay', sans-serif;
+  font-family: 'ClashDisplay', sans-serif;
   color: var(--main-dark);
 }
 
 p {
   font-weight: 500;
   font-size: 18px;
-  font-family: 'ClashDislpay', sans-serif;
+  font-family: 'ClashDisplay', sans-serif;
   color: var(--main-dark);
 }
 
@@ -111,7 +111,7 @@ button {
   padding: 10px 20px;
   background: var(--main-dark);
   color: var(--main-light, #E9E9F6);
-  font-family: "Clash Display";
+  font-family: "ClashDisplay";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -163,7 +163,7 @@ button {
   padding: 10px 20px;
   background: var(--main-light);
   color: var(--main-dark, #E9E9F6);
-  font-family: "Clash Display";
+  font-family: "ClashDisplay";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -184,7 +184,7 @@ button {
 .btn-empt {
   background: none;
   color: var(--main-dark);
-  font-family: "Clash Display";
+  font-family: "ClashDisplay";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;

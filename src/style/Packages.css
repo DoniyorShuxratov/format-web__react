@@ -80,7 +80,7 @@
 }
 
 .package-card__2 {
-    background: #A7A7F0!important;
+    background: #FFD747!important;
     transform: scale(1.1);
     transition: all 0.2s ease-in-out;
 }
@@ -90,7 +90,7 @@
 }
 
 .package-card__3 {
-    background: #FFD747!important;
+    background: #A7A7F0!important;
     transition: all 0.2s ease-in-out;
 }
 

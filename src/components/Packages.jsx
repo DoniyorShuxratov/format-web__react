@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import ArrowBottomCircle from '../../public/Icons/arrow_up_circle';
 import ArrowTopCircle from '../../public/Icons/arrow_down_circle';
+import { motion as m } from "framer-motion";
+import { UseInViewAnimation } from './Animation';
 
 export function Packages() {
+    const { ref, mainControl } = UseInViewAnimation();
     const [dropdownVisible, setDropdownVisible] = useState(null);
 
     const toggleDropdown = (index) => {
@@ -13,11 +16,39 @@ export function Packages() {
         <>
             <section className="packages-section">
                 <div className="packages-container container">
-                    <div className="packages-content">
-                        <div className="packages-title">
+                    <div className="packages-content" ref={ref}>
+                        <m.div
+                        
+                        variants={{
+                            hidden: {opacity: 0, y: 75},
+                            visable: {opacity: 1, y: 0},
+                        }}
+                        initial='hidden'
+                        animate={mainControl}
+                        transition={{   
+                            duration: 0.7,
+                            delay: 0.5,
+                            ease: [0, 0.71, 0.2, 1.01]
+                        }}
+                        
+                        className="packages-title">
                             <h2>Paketlar</h2>
-                        </div>
-                        <div className="packages-list">
+                        </m.div>
+                        <m.div
+                        
+                        variants={{
+                            hidden: {opacity: 0, y: 75},
+                            visable: {opacity: 1, y: 0},
+                        }}
+                        initial='hidden'
+                        animate={mainControl}
+                        transition={{   
+                            duration: 0.8,
+                            delay: 0.7,
+                            ease: [0, 0.71, 0.2, 1.01]
+                        }}
+                        
+                        className="packages-list">
                             {/* Card 1 */}
                             <div className="packages-list__card">
                                 <div className="package-card__1 def-box" onMouseEnter={() => toggleDropdown(1)}>
@@ -91,7 +122,7 @@ export function Packages() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </m.div>
                     </div>
                 </div>
             </section>
