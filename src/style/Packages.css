@@ -41,13 +41,15 @@
     gap: 10px;
     max-height: 0;
     overflow-y: scroll;
-    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-width: thin; 
     scrollbar-color: rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0); 
     transition: max-height 0.3s ease;
 }
+
 .package-card__list.open {
     max-height: 150px; 
 }
+
 .package-card__img > img {
     width: 100%;
 }
@@ -100,13 +102,14 @@
 @media (width < 750px) {
     .packages-list {
         flex-direction: column;
-    }
-
-    .packages-list {
         position: relative;
+        margin: 0px 10px;
     }
 
     .packages-section {
         padding-bottom: 25px;
+    }
+    .package-card__2 {
+        transform: scale(1);
     }
 }

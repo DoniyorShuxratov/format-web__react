@@ -98,6 +98,7 @@ button {
   cursor: url('./Images/pointer_1.svg'), auto;
 }
 .btn {
+  text-wrap: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,6 +118,31 @@ button {
   line-height: normal;
   border-radius: 50px;
   border: 4px solid var(--main-dark);
+}
+
+.btn-ctrl {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  border: 4px solid var(--main-dark);
+  background-color: var(--main-light);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-ctrl:hover {
+  background: var(--main-dark);
+  transform: translateY(-5px);
+}
+
+.btn-ctrl:active {
+  transform: translateY(2px);
+}
+
+.btn-ctrl:hover path{
+  stroke: var(--main-light)!important;
 }
 
 .btn-primary:hover {
@@ -204,7 +230,6 @@ button {
     border: 1px solid var(--main-dark);
   }
   .container {
-    overflow: hidden;
     width: 100%;
     padding: 0;
   }

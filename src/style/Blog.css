@@ -33,3 +33,24 @@
     text-align: center;
     gap: 25px;
 }
+
+@media (width < 750px) {
+    .blog-content__pattern--1 {
+        position: absolute;
+        top: -100px;
+        left: 10px;
+    }
+    .blog-content__pattern--2 {
+        position: absolute;
+        top: 250px;
+        left: 300px;
+    }
+    .blog-content__pattern--1 > img {
+        width: 100px!important;
+        height: 100px!important;
+    }
+    .blog-content__pattern--2 > img {
+        width: 100px!important;
+        height: 100px!important;
+    }
+}

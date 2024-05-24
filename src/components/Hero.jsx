@@ -64,7 +64,7 @@ export function Hero() {
                         
 
                             className="hero-content__img--2">
-                                <img src="./Images/web-hero-3.png" alt="" />
+                                <img src="https://ik.imagekit.io/imagesOptimaization/Images/Format/web-hero-3.png?updatedAt=1716384700149" alt="" />
                             </m.div>
                             <m.div 
                             

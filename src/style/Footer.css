@@ -63,3 +63,19 @@
         transform: translateX(-50%);
     }
 }
+
+@media (width < 750px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-phone {
+        padding: 20px 10px;
+    }
+    .footer-link {
+        padding: 20px 10px;
+    }
+    .footer-mark__text {
+        padding: 10px 10px;
+    }
+}
