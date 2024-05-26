@@ -28,7 +28,7 @@
 
 body {
   background: #F4EDDC;
-  cursor: url('./Images/auto_1.svg'), auto;
+  cursor: url('https://ik.imagekit.io/imagesOptimaization/Images/Format/auto_1.svg?updatedAt=1716728062682'), auto;
   
 }
 hr {
@@ -86,7 +86,7 @@ a {
   
 }
 a:hover {
-  cursor: url('./Images/pointer_1.svg'), auto;
+  cursor: url('https://ik.imagekit.io/imagesOptimaization/Images/Format/pointer_1.svg?updatedAt=1716728071428'), auto;
 }
 
 /* button style */
@@ -95,7 +95,7 @@ button {
   background: none;
   border: none;
   text-align: start;
-  cursor: url('./Images/pointer_1.svg'), auto;
+  cursor: url('https://ik.imagekit.io/imagesOptimaization/Images/Format/pointer_1.svg?updatedAt=1716728071428'), auto;
 }
 .btn {
   text-wrap: nowrap;
@@ -103,7 +103,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  cursor: url('./Images/pointer_1.svg'), auto;
+  cursor: url('https://ik.imagekit.io/imagesOptimaization/Images/Format/pointer_1.svg?updatedAt=1716728071428'), auto;
   transition: all 0.2s ease-in-out;
 }
 
