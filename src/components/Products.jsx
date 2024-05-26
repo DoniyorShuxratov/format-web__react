@@ -8,23 +8,32 @@ const productData = [
     {
         id: 1,
         category: 'Taqdimotlar',
-        imgSrc: './Images/hr.png',
         title: 'Mavzu: Microsoft Office Word',
         slides: Array(13).fill('').map((_, index) => `https://ik.imagekit.io/imagesOptimaization/Images/Format/hr_slide_${index + 1}.png?updatedAt=1716441977282`)
     },
     {
         id: 2,
         category: 'Taqdimotlar',
-        imgSrc: './Images/hr_1.png',
-        title: 'Mavzu: Klaviatura bilan ishlash',
-        slides: Array(13).fill('').map((_, index) => `https://ik.imagekit.io/imagesOptimaization/Images/Format/hr_slide_${index + 1}.png?updatedAt=1716441977282`)
+        title: 'Mavzu: MS Excel. Formula bilan tanishish',
+        slides: Array(9).fill('').map((_, index) => `https://ik.imagekit.io/imagesOptimaization/Images/Format/hr_slide2_${index + 1}.png?updatedAt=1716441977282`)
     },
     {
         id: 3,
+        category: 'Taqdimotlar',
+        title: 'Mavzu: Google Akkaunt yaratish',
+        slides: Array(13).fill('').map((_, index) => `https://ik.imagekit.io/imagesOptimaization/Images/Format/hr_slide3_${index + 1}.png?updatedAt=1716441977282`)
+    },
+    {
+        id: 4,
+        category: 'Taqdimotlar',
+        title: 'Mavzu: Parolllar xaqida',
+        slides: Array(10).fill('').map((_, index) => `https://ik.imagekit.io/imagesOptimaization/Images/Format/hr_slide4_${index + 1}.png?updatedAt=1716441977282`)
+    },
+    {
+        id: 5,
         category: 'Videolar',
-        imgSrc: './Images/hr_2.png',
         title: 'Mavzu: Video Editing',
-        slides: Array(13).fill('').map((_, index) => `https://ik.imagekit.io/imagesOptimaization/Images/Format/hr_slide_${index + 1}.png?updatedAt=1716441977282`)
+        slides: Array(1).fill('').map((_, index) => `https://ik.imagekit.io/imagesOptimaization/Video/password.mp4?updatedAt=1716705733405`)
     }
 ];
 
@@ -112,9 +121,16 @@ export function Products(){
                             <div className="product-card def-box" key={product.id}>
                                 <m.div  className="product-card__carousel" ref={cardRefs[index]}>
                                     <m.div className="product-card__top">
-                                        {product.slides.map((slide, index) => (
-                                            <m.img className='img' key={index} src={slide} alt={`Slide ${index + 1}`} />
-                                        ))}
+                                    {product.slides.map((slide, index) => (
+                                        selectedCategory === 'Videolar' ? (
+                                            <video key={index} className='img' autoPlay loop muted>
+                                                <source src={slide} type='video/mp4' />
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        ) : (
+                                            <img key={index} className='img' src={slide} alt={`Slide ${index + 1}`} />
+                                        )
+                                    ))}
                                     </m.div>
                                     <div className="product-card__carousel--control">
                                         <button className='btn-ctrl' onClick={() => scrollHorizontally('left', index)}><ArrowLeft2/></button>
@@ -122,10 +138,12 @@ export function Products(){
                                     </div>
                                 </m.div>
                                 <div className="product-card__content">
-                                    <h2>{product.title}</h2>
-                                    <div className="product-card__content--btns">
-                                        <p>Slayd: <span>{product.slides.length}</span></p>
-                                        <button>Ko'rish (demo)</button>
+                                    <div className="product-card__content--txt">
+                                        <h2>{product.title}</h2>
+                                        <div className="product-card__content--btns">
+                                            <p>Slayd: <span>{product.slides.length}</span></p>
+                                            <button>Ko'rish (demo)</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
