@@ -12,7 +12,7 @@ export function Blog() {
                 <hr />
                 <div className="blog-container" ref={ref}>
                     <div className="blog-content">
-                        <div className="blog-content__pattern container">
+                        <div className="blog-content__pattern">
                             <m.div 
                             
                             variants={{

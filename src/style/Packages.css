@@ -112,4 +112,7 @@
     .package-card__2 {
         transform: scale(1);
     }
+    .package-card__2:hover {
+        transform: scale(1);
+    }
 }
