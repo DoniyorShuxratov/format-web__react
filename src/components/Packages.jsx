@@ -56,7 +56,7 @@ export function Packages() {
                                         <h3>Boshlang‘ich</h3>
                                     </div>
                                     <div className="package-card__img">
-                                        <img src="./Images/hr.png" alt="" srcSet="" />
+                                        <img src="https://ik.imagekit.io/imagesOptimaization/Images/Format/pckg_1.png?updatedAt=1716883205351" alt="" srcSet="" />
                                     </div>
                                     <div className="package-card__active" >
                                         <h3>13.5M so'm</h3>
@@ -77,7 +77,7 @@ export function Packages() {
                                         <h3>Standard</h3>
                                     </div>
                                     <div className="package-card__img">
-                                        <img src="./Images/hr.png" alt="" srcSet="" />
+                                        <img src="https://ik.imagekit.io/imagesOptimaization/Images/Format/pckg_2.png?updatedAt=1716883205204" alt="" srcSet="" />
                                     </div>
                                     <div className="package-card__active" >
                                         <h3>20M so'm</h3>
@@ -102,7 +102,7 @@ export function Packages() {
                                         <h3>Premium</h3>
                                     </div>
                                     <div className="package-card__img">
-                                        <img src="./Images/hr.png" alt="" srcSet="" />
+                                        <img src="https://ik.imagekit.io/imagesOptimaization/Images/Format/pckg_3.png?updatedAt=1716883205399" alt="" srcSet="" />
                                     </div>
                                     <div className="package-card__active" >
                                         <h3>30M so'm</h3>
