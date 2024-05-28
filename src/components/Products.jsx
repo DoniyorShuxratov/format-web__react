@@ -32,8 +32,38 @@ const productData = [
     {
         id: 5,
         category: 'Videolar',
-        title: 'Mavzu: Video Editing',
+        title: 'Mavzu: Parol qo\'yish',
         slides: Array(1).fill('').map((_, index) => `https://ik.imagekit.io/imagesOptimaization/Video/password.mp4?updatedAt=1716705733405`)
+    },
+    {
+        id: 6,
+        category: 'Videolar',
+        title: 'Mavzu: Akkaunt nima?',
+        slides: Array(1).fill('').map((_, index) => `https://ik.imagekit.io/yr7ebaock/Video/What%20is%20an%20account.mp4?updatedAt=1716887155647`)
+    },
+    {
+        id: 7,
+        category: 'Tarqatma materiallar',
+        title: 'Mavzu: Akkaunt nima?',
+        slides: Array(3).fill('').map((_, index) => `https://ik.imagekit.io/imagesOptimaization/Images/Format/hr_mt5_${index + 1}.png?updatedAt=1716887155647`)
+    },
+    {
+        id: 8,
+        category: 'Tarqatma materiallar',
+        title: 'Mavzu: Ishonchli Parollar',
+        slides: Array(2).fill('').map((_, index) => `https://ik.imagekit.io/imagesOptimaization/Images/Format/hr_mt6_${index + 1}.png?updatedAt=1716887155647`)
+    },
+    {
+        id: 9,
+        category: 'Ssenariylar',
+        title: 'Mavzu: Akkaunt nima?',
+        slides: Array(2).fill('').map((_, index) => `https://ik.imagekit.io/imagesOptimaization/Images/Format/hr_sc_${index + 1}.png?updatedAt=1716887155647`)
+    },
+    {
+        id: 10,
+        category: 'Ssenariylar',
+        title: 'Mavzu: Ishonchli Parollar?',
+        slides: Array(2).fill('').map((_, index) => `https://ik.imagekit.io/imagesOptimaization/Images/Format/hr_sc1_${index + 1}.png?updatedAt=1716887155647`)
     }
 ];
 
