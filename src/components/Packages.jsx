@@ -14,7 +14,7 @@ export function Packages() {
 
     return (
         <>
-            <section className="packages-section">
+            <section id='packagesSection' className="packages-section">
                 <div className="packages-container container">
                     <div className="packages-content" ref={ref}>
                         <m.div

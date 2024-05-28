@@ -80,7 +80,7 @@ export function Blog() {
                         
                         className="blog-title">
                             <h2>Telegram kanalimizga obuna bo‘ling</h2>
-                            <button className="btn btn-primary">@format_mohirdev</button>
+                            <button onClick={() => window.location.href = 'https://t.me/format_mohirdev'} className="btn btn-primary">@format_mohirdev</button>
                         </m.div>
                     </div>
                 </div>

@@ -64,10 +64,10 @@ export function Navbar() {
             className="header-pc">
                 <nav className='navbar-pc__container'>
                     <ul className="navbar-pc__list">
-                        <li className='navbar-pc__item--logo'><a className='navbar-pc__item--link' href="#">format</a></li>
-                        <li className='navbar-pc__item'><a className='navbar-pc__item--link' href="#">Biz haqimizda</a></li>
-                        <li className='navbar-pc__item'><a className='navbar-pc__item--link' href="#">Produktlar</a></li>
-                        <li className='navbar-pc__item'><a className='navbar-pc__item--link' href="#">Expertlar</a></li>
+                        <li className='navbar-pc__item--logo'><a className='navbar-pc__item--link' href="#heroSection">format</a></li>
+                        <li className='navbar-pc__item'><a className='navbar-pc__item--link' href="#aboutSection">Biz haqimizda</a></li>
+                        <li className='navbar-pc__item'><a className='navbar-pc__item--link' href="#productSection">Produktlar</a></li>
+                        <li className='navbar-pc__item'><a className='navbar-pc__item--link' href="#packagesSection">Paketlar</a></li>
                     </ul>
                 </nav>
             </m.div>

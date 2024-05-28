@@ -2,6 +2,9 @@ import React from 'react';
 
 import { motion as m } from "framer-motion";
 import { UseInViewAnimation } from './Animation';
+import LaptopPtIcon from '../../public/Pattern/laptop';
+import DocPtIcon from '../../public/Pattern/doc';
+import BagPtIcon from '../../public/Pattern/bag';
 
 export function ProblemSolution() {
   const { ref, mainControl } = UseInViewAnimation();
@@ -24,7 +27,7 @@ export function ProblemSolution() {
           }}
 
           className="psinfo-title">
-            <h2>Problem Solution</h2>
+            <h2>Afzalliklarimiz</h2>
           </m.div>
           <div className="psinfo-actives">
             <div className="psinfo-list">
@@ -45,26 +48,41 @@ export function ProblemSolution() {
               className="psinfo-list--cards">
                 <div className="psinfo-list__card">
                   <div className="psinfo-list__card--top">
-                    <h3>Problema #1</h3>
+                    <LaptopPtIcon/>
                   </div>
-                  <div className="psinfo-list__card--paragraph">
-                    <p>AT tez oʻsuvchan soha. Natijada darsliklardagi bilimlar oson eskirishi mumkin. </p>
-                  </div>
-                </div>
-                <div className="psinfo-list__card">
-                  <div className="psinfo-list__card--top">
-                    <h3>Problema #1</h3>
-                  </div>
-                  <div className="psinfo-list__card--paragraph">
-                    <p>AT tez oʻsuvchan soha. Natijada darsliklardagi bilimlar oson eskirishi mumkin. <br /><br /> AT tez oʻsuvchan soha. Natijada darsliklardagi bilimlar oson eskirishi mumkin. </p>
+                  <div className="psinfo-list__card--bottom">
+                    <div className="psinfo-list__card--top">
+                      <h3>Zamonaviy metodlar</h3>
+                    </div>
+                    <div className="psinfo-list__card--paragraph">
+                      <p>Baʼzida oʻqituvchilar metodlari eskirgani tufayli hatto kuchli bilimli boʻlsalar-da, yaxshi dars bera olishmaydi. Format dasturida esa darslar uchun zamonaviy metodlar mavjud va ustozlarga pedogogika boʻyicha ham treninglar oʻtkaziladi.</p>
+                    </div>
                   </div>
                 </div>
                 <div className="psinfo-list__card">
-                  <div className="psinfo-list__card--top">
-                    <h3>Problema #1</h3>
+                <div className="psinfo-list__card--top">
+                    <DocPtIcon/>
                   </div>
-                  <div className="psinfo-list__card--paragraph">
-                    <p>Maktab oʻqituvchilarining ishlash davri oʻrtacha 30 yil hisoblanadi. Bu vaqtda ustozlarning ham pedogogik, ham sohaga oid bilimi eskiradi.<br /><br />Bizning dastur esa oʻqituchilarga muntazam treninglar tashkil qilishni taklif qilib, ustozlarni qiynayotgan muammolarga yechim beramiz</p>
+                  <div className="psinfo-list__card--bottom">
+                    <div className="psinfo-list__card--top">
+                      <h3>Faqat kerakli bilimlar</h3>
+                    </div>
+                    <div className="psinfo-list__card--paragraph">
+                      <p>AT tez oʻsuvchan soha va maktabdagi darsliklar ham shuning natijasida tez eskiradi. Bizning dasturimiz esa muntazam yangilanib turadi. Bu orqali oʻrganilgan bilimlar foydasiz boʻlib qolmaydi.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="psinfo-list__card">
+                <div className="psinfo-list__card--top">
+                    <BagPtIcon/>
+                  </div>
+                  <div className="psinfo-list__card--bottom">
+                    <div className="psinfo-list__card--top">
+                      <h3>Amaliy koʻnikmalar</h3>
+                    </div>
+                    <div className="psinfo-list__card--paragraph">
+                      <p>Ayrim oʻrganilgan narsalar faqat qoʻgʻozda qoladi. Bunday nazariy bilmlar oʻquvchi miyasini band qiladi va vaqtini oladi. Formatda esa eng aktual amaliy koʻnikmalar oʻrgatiladi. Mashgʻulotlar davomida va keyinchalik hayotda ham ularni qoʻllash imkoni yaratiladi.</p>
+                    </div>
                   </div>
                 </div>
 

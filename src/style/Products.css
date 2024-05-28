@@ -23,12 +23,14 @@
     flex-wrap: wrap;
     gap: 50px;
     margin-top: 50px;
-    align-items: flex-start;
 }
 
 .product-card {
+    display: flex;
+    flex-direction: column;
     position: relative;
     flex: 0 1 calc(50% - 25px);
+    justify-content: space-between;
 }
 .product-card__carousel {
     position: relative;

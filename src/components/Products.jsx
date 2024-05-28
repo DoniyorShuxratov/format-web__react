@@ -142,7 +142,7 @@ export function Products(){
                                         <h2>{product.title}</h2>
                                         <div className="product-card__content--btns">
                                             <p>Slayd: <span>{product.slides.length}</span></p>
-                                            <button>Ko'rish (demo)</button>
+                                            <button onClick={() => window.location.href = 'https://t.me/format_demo'}>Ko'rish (demo)</button>
                                         </div>
                                     </div>
                                 </div>

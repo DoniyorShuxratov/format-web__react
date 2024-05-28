@@ -1,8 +1,7 @@
 import ArrowTopRight from "../../public/Icons/arrow_top_right";
-import Pause from "../../public/Icons/player_pause";
 import PlayerPlayIcon from "../../public/Icons/player_play";
+import SmilePt from "../../public/Pattern/smile";
 import Star_1 from "../../public/Pattern/star_1";
-import Star_2 from "../../public/Pattern/star_2";
 import { UseInViewAnimation } from "./Animation";
 import { motion as m } from "framer-motion";
 import React, { useRef, useState } from 'react';
@@ -67,7 +66,7 @@ export function About() {
                         }}
 
                         className="about-section__pattern">
-                            <Star_2/>
+                            <SmilePt/>
                         </m.div>
                         <div className="about-content__card">
                             <m.div
@@ -88,24 +87,22 @@ export function About() {
                                 <div className="about-card__left">
                                     <div className="about-card__left--img">
                                         <video onClick={handlePlayPause} ref={videoRef} src="https://ik.imagekit.io/imagesOptimaization/Video/video%20compressed%20480.mp4?updatedAt=1716375288718"></video>
-                                        <button className="play-button">
-                                            {isPlaying ? <Pause/> : <PlayerPlayIcon/>}
+                                        <button onClick={handlePlayPause} className="play-button">
+                                            {isPlaying ? '' : <PlayerPlayIcon/>}
                                         </button>
                                     </div>
                                 </div>
                                 <div className="about-card__right">
                                     <div className="about-card__right--title">
-                                        <h2>Dastur o'zi nima?</h2>
+                                        <h2>Dastur — Informatika fanining mukammal ssenariysi.</h2>
                                     </div>
                                     <div className="about-card__right--paragraph">
                                         <p>
-                                            Dastur Mohirdev kompaniyasining loyihasi hisoblanadi. Kompaniya onlayn taʼlim platformasida asosan maktab yoshidan oshganlar uchun kurslar taqdim qilsa, Format loyihasi esa maktab oʻquvchilari uchun moʻljallangan. <br /><br />
-                                            Biz informatika darslari uchun zamon talablariga mos keluvchi oʻquv rejasi, har bir dars uchun bola psixologiyasiga moslangan materiallarni taʼminlaymiz. Oʻquv dasturimiz malakali mutaxassislar yordamida ishlab chiqilgan va sinovdan oʻtkazilgan.<br /><br />
-                                            Dastur maqsadi - oʻquvchilarda qoʻshimcha kurslarga ehtiyoj tugʻdirmasdan, maktabning oʻzida ATni oʻrgatish
+                                        Format oʻquv dasturi Mohirdev kompaniyasi loyihalaridan biridir. U maktab oʻquvchilari uchun moʻljallangan. Biz bu dastur bilan AT(Axborot Texnologiyalari)ni oʻrganish uchun qoʻyilgan yosh chegaralarini buzamiz, uni faqat qoʻshimcha kurslarda oʻrganish mumkinligi haqidagi tasavvurlarni yoʻqqa chiqaramiz.
                                         </p>
                                     </div>
                                     <div className="about-card__right--btn">
-                                        <button className="btn btn-primary"><ArrowTopRight/>Yaqindan tanishing</button>
+                                        <button onClick={() => window.location.href = 'https://www.instagram.com/format.mohirdev/'} className="btn btn-primary"><ArrowTopRight/>Yaqindan tanishing</button>
                                     </div>
                                 </div>
                             </m.div>
