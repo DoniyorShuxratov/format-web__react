@@ -4,6 +4,9 @@ import HeartIcon from '../../public/Icons/heart';
 import PlayerPlayIcon from '../../public/Icons/player_play';
 import UserIcon from '../../public/Icons/user';
 import { useInView, motion as m, useAnimation } from "framer-motion";
+import WarningCircle from '../../public/Icons/circle_warning';
+import ShoppingBag from '../../public/Icons/shopping_bag';
+import Folders from '../../public/Icons/folders';
 export function Navbar() {
     const [activeLink, setActiveLink] = useState('home');
 
@@ -33,17 +36,17 @@ export function Navbar() {
                         </li>
                         <li className="header__nav-item">
                             <a href="#aboutSection" className={`header__nav-link ${activeLink === 'info' ? 'active-nav' : ''}`} onClick={() => handleClick('info')}>
-                                <HeartIcon size={25}/>
+                                <WarningCircle size={25}/>
                             </a>
                         </li>
                         <li className="header__nav-item">
                             <a href="#productSection" className={`header__nav-link ${activeLink === 'heart' ? 'active-nav' : ''}`} onClick={() => handleClick('heart')}>
-                                <PlayerPlayIcon size={25}/>
+                                <Folders size={25}/>
                             </a>
                         </li>
                         <li className="header__nav-item">
-                            <a href="#exportSection" className={`header__nav-link ${activeLink === 'user' ? 'active-nav' : ''}`} onClick={() => handleClick('user')}>
-                                <UserIcon size={25}/>
+                            <a href="#packagesSection" className={`header__nav-link ${activeLink === 'user' ? 'active-nav' : ''}`} onClick={() => handleClick('user')}>
+                                <ShoppingBag size={25}/>
                             </a>
                         </li>
                     </ul>

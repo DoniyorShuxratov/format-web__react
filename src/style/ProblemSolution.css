@@ -28,6 +28,11 @@
     border-radius: 34px;
     border: 4px solid var(--main-dark);
 }
+.psinfo-list__card--bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
 .psinfo-list__img {
     width: 100%;    

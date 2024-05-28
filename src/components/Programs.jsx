@@ -92,7 +92,7 @@ export function Programs() {
                                 <div className={`program__list--contain ${isOpen[index] ? 'open' : 'closed'}`}>
                                     <p>{program.description}</p>
                                 </div>
-                                <hr/>
+                                {index !== programsData.length - 1 && <hr />}
                             </div>
                         ))}
                     </m.div>

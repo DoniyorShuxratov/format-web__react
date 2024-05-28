@@ -84,6 +84,7 @@
     justify-content: space-between;
 }
 
+
 @media (width < 750px) {
     .product-cards {
         flex-direction: column;

@@ -105,7 +105,10 @@
         position: relative;
         margin: 0px 10px;
     }
-
+    .packages-content {
+        position: relative;
+        padding-bottom: 15px;
+    }
     .packages-section {
         padding-bottom: 25px;
     }
