@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 export function UseInViewAnimation() {
 
     const ref = useRef(null)
-    const isInView = useInView(ref, {once: true})
+    const isInView = useInView(ref)
 
     const mainControl = useAnimation();
 

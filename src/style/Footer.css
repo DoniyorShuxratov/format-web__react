@@ -41,7 +41,17 @@
 
 .footer-phone {
     padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
+
+.footer-phone__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .footer-link {
     display: flex;
     flex-direction: column;
@@ -53,6 +63,12 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.footer-link__list--item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 @keyframes ticker {

@@ -1,5 +1,6 @@
 import Instagram from "../../public/Icons/instagram";
 import Mail from "../../public/Icons/mail";
+import Phone from "../../public/Icons/phone";
 import Telegram from "../../public/Icons/telegram";
 import HeartPt from "../../public/Pattern/heart";
 
@@ -23,8 +24,13 @@ export function Footer() {
                 </div>
                 <div className="footer-container container">
                     <div className="footer-phone">
-                        <h4>Telefon raqam</h4><br /><br />
-                        <h3>+998(97)485-40-30</h3>
+                        <div className="footer-phone__title">
+                            <Phone size={30}/>
+                            <h3> Telefon raqam</h3>
+                        </div>
+                        <div className="footer-phone__number">
+                            <h3><a href="tel:+998974854030">+998(97)485-40-30</a></h3>
+                        </div>
                     </div>
                     <div className="footer-link">
                         <div className="footer-link__title">
@@ -32,13 +38,12 @@ export function Footer() {
                         </div>
                         <div className="footer-link__list">
                             <div className="footer-link__list--item">
-                                <p>Email: format@mohirdev.com</p>
+                                <Telegram/> 
+                                <p>@format_mohirdev</p>
                             </div>
                             <div className="footer-link__list--item">
-                                <p>Telegram: @format_mohirdev</p>
-                            </div>
-                            <div className="footer-link__list--item">
-                                <p>Instagram: @format.mohirdev</p>
+                                <Instagram/>
+                                <p>@format.mohirdev</p>
                             </div>
                         </div>
                     </div>

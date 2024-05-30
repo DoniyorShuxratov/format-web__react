@@ -24,6 +24,7 @@
   box-sizing: border-box;
   font-family: 'ClashDisplay', sans-serif;
   scroll-behavior: smooth;
+  transition: scroll-behavior 1s ease-out;
 }
 
 body {

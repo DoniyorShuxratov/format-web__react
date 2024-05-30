@@ -21,7 +21,7 @@ export function About() {
     };
     return (
         <>
-            <section id="aboutSection" className="about">
+            <section className="about">
                 <div className="about__container container">
                     <div className="about-content" ref={ref}>
                         <m.div 
@@ -39,7 +39,7 @@ export function About() {
                         }}
 
                         className="about-content__title">
-                            <div className="about-content__title--toptext">
+                            <div id="aboutSection" className="about-content__title--toptext">
                                 <Star_1/>
                                     <p>Biz haqimizda</p>
                                 <Star_1/>
@@ -48,7 +48,7 @@ export function About() {
                                 <h2>Format loyihasi</h2>
                             </div>
                             <div className="about-content__title--paragraph">
-                                <p>Format - boshlangʻich sinflar uchun AT (axborot texnologiyalari) savodxonligi oʻquv dasturi. Biz maktablarning boshlangʻich sinflari uchun informatika darslarini samarali tashkil qilishda koʻmaklashamiz.</p>
+                                <p>Boshlangʻich sinflar uchun AT (axborot texnologiyalari) savodxonligi oʻquv dasturi. Biz maktablarning boshlangʻich sinflari uchun informatika darslarini samarali tashkil qilishda koʻmaklashamiz.</p>
                             </div>
                         </m.div>
                         <m.div 
