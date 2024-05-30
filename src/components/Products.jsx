@@ -11,28 +11,28 @@ const productData = [
         id: 1,
         category: 'Taqdimotlar',
         title: 'Mavzu: Microsoft Office Word',
-        type: '5-sinif',
+        type: '5-sinf',
         slides: Array(13).fill('').map((_, index) => `https://ik.imagekit.io/imagesOptimaization/Images/Format/hr_slide_${index + 1}.png?updatedAt=1716441977282`)
     },
     {
         id: 2,
         category: 'Taqdimotlar',
         title: 'Mavzu: MS Excel. Formula bilan tanishish',
-        type: '5-sinif',
+        type: '5-sinf',
         slides: Array(9).fill('').map((_, index) => `https://ik.imagekit.io/imagesOptimaization/Images/Format/hr_slide2_${index + 1}.png?updatedAt=1716441977282`)
     },
     {
         id: 3,
         category: 'Taqdimotlar',
         title: 'Mavzu: Google Akkaunt yaratish',
-        type: '1-sinif',
+        type: '1-sinf',
         slides: Array(13).fill('').map((_, index) => `https://ik.imagekit.io/imagesOptimaization/Images/Format/hr_slide3_${index + 1}.png?updatedAt=1716441977282`)
     },
     {
         id: 4,
         category: 'Taqdimotlar',
         title: 'Mavzu: Parolllar xaqida',
-        type: '1-sinif',
+        type: '1-sinf',
         slides: Array(10).fill('').map((_, index) => `https://ik.imagekit.io/imagesOptimaization/Images/Format/hr_slide4_${index + 1}.png?updatedAt=1716441977282`)
     },
     {

@@ -7,7 +7,7 @@
 }
 
 .program__list--title {
-    cursor: url('./Images/pointer_1.svg'), auto;
+    cursor: url('https://ik.imagekit.io/imagesOptimaization/Images/Format/pointer_1.svg?updatedAt=1716728071428'), auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,8 +33,13 @@
     transition: max-height 0.3s ease;
 }
 
+.program__contain--list  > hr{
+    height: 2px;
+    margin: 10px 0px;
+}
+
 .program__list--contain.open {
-    max-height: 200px; 
+    max-height: 1000px;
 }
 
 .programs__pattern {

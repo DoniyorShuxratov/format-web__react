@@ -73,7 +73,18 @@ h3 {
   font-family: 'ClashDisplay', sans-serif;
   color: var(--main-dark);
 }
-
+h4 {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'ClashDisplay', sans-serif;
+  color: var(--main-dark);
+}
+span {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'ClashDisplay', sans-serif;
+  color: #656565;
+}
 p {
   font-weight: 500;
   font-size: 18px;

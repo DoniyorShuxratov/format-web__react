@@ -7,17 +7,65 @@ import { UseInViewAnimation } from './Animation';
 
 const programsData = [
     {
-        title: "Program 1",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, earum!"
+        "title": "I chorak",
+        "lesson_1": {
+            'lesson_name': '1-modul: AT kirish',
+            'quantity': 'Darslar soni: 9'
+        },
+        "lesson_2": {
+            'lesson_name': '2-modul: Windows asoslari',
+            'quantity': 'Darslar soni: 8'
+        },
+        "lesson_3": {
+            'lesson_name': '',
+            'quantity': ''
+        }
     },
     {
-        title: "Program 2",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, earum!"
+        "title": "II chorak",
+        "lesson_1": {
+            'lesson_name': '1-modul: Windows asoslari',
+            'quantity': '2-modul: Darslar soni: 8'
+        },
+        "lesson_2": {
+            'lesson_name': '2-modul: Internet asoslari',
+            'quantity': 'Darslar soni: 7'
+        },
+        "lesson_3": {
+            'lesson_name': '',
+            'quantity': ''
+        }
     },
     {
-        title: "Program 3",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, earum!"
-    }
+        "title": "III chorak",
+        "lesson_1": {
+            'lesson_name': '1-modul: Mantiq',
+            'quantity': 'Darslar soni: 8'
+        },
+        "lesson_2": {
+            'lesson_name': '2-modul: Scratch',
+            'quantity': 'Darslar soni: 4'
+        },
+        "lesson_3": {
+            'lesson_name': '3-modul: Raqamli fuqarolik',
+            'quantity': 'Darslar soni: 7'
+        }
+    },
+    {
+        "title": "IV chorak",
+        "lesson_1": {
+            'lesson_name': '1-modul: Raqamli ijodkorlik',
+            'quantity': 'Darslar soni: 11'
+        },
+        "lesson_2": {
+            'lesson_name': '2-modul: Yakuniy darslar',
+            'quantity': 'Darslar soni: 6'
+        },
+        "lesson_3": {
+            'lesson_name': '',
+            'quantity': ''
+        }
+    },
 ];
 
 export function Programs() {
@@ -90,7 +138,20 @@ export function Programs() {
                                     {isOpen[index] ?  <ArrowBottomCircle/> : <ArrowTopCircle/>}
                                 </div>
                                 <div className={`program__list--contain ${isOpen[index] ? 'open' : 'closed'}`}>
-                                    <p>{program.description}</p>
+                                    <div className="program__contain">
+                                        <div className="program__contain--list">
+                                            <h4>{program.lesson_1.lesson_name}</h4>
+                                            <span>{program.lesson_1.quantity}</span>
+                                            <br />
+                                            <br />
+                                            <h4>{program.lesson_2.lesson_name}</h4>
+                                            <span>{program.lesson_2.quantity}</span>
+                                            <br />
+                                            <br />
+                                            <h4>{program.lesson_3.lesson_name}</h4>
+                                            <span>{program.lesson_3.quantity}</span>
+                                        </div>
+                                    </div>
                                 </div>
                                 {index !== programsData.length - 1 && <hr />}
                             </div>
