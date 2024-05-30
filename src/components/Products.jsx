@@ -204,7 +204,6 @@ export function Products(){
                                 </div>
                             </div>
                         ))}
-
                     </m.div>
                 </div>
             </div>
