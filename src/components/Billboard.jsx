@@ -30,8 +30,7 @@ const swipePower = (offset, velocity) => {
 export const Billboard = () => {
   const images = [
     "./Images/billboard_1.png",
-    "./Images/billboard_1.png",
-    "./Images/billboard_1.png",
+    "./Images/billboard_2.png"
   ];
 
   const [[page, direction], setPage] = useState([0, 0]);
@@ -45,7 +44,7 @@ export const Billboard = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       paginate(1);
-    }, 2000); 
+    }, 5000); 
 
     return () => clearInterval(interval); 
   }, [page]);
